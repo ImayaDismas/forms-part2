@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fontin">
       </head>
       <body>
-          <form>
+          <form action="mailto:imayadismas@gmail.com" method="post" enctype="text/plain">
           <div class="row">
              
               <div class="columns small-12">
@@ -25,10 +25,10 @@
                   <input style="background-color:transparent" type="text" name="id_number" placeholder="Name..." id="id_number2" size="10" maxlength="10" />
               </div> 
               <div class="columns small-6">
-                  <input style="background-color:transparent" type="text" name="id_number" placeholder="Email..." id="id_number1" size="10" maxlength="10" /> 
+                  <input style="background-color:transparent" type="email" name="email" placeholder="Email..." type="email" required/> 
               </div>
               <div class="columns small-12">
-                  <textarea  style="background-color:transparent" name="comments" id="id_number" rows="10" cols="50" wrap="physical" placeholder="Your Message here..."></textarea>
+                  <textarea  style="background-color:transparent" name="comments" id="id_number" rows="10" cols="100" wrap="physical" placeholder="Your Message here..."></textarea>
               </div>
               <button width="30%" boarder-radius="25px" id="submit" class="button" onclick="function()" type="submit">Submit</button> 
           </div>
