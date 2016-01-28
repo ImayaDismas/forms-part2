@@ -13,11 +13,6 @@
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fontin">
       </head>
       <body>
-             <?php
-$action=$_REQUEST['action'];
-if ($action=="")    /* display the contact form */
-    {
-    ?>
           <form action="" method="post" value="submit" enctype="text/plain">
           <div class="row">
              
@@ -38,25 +33,6 @@ if ($action=="")    /* display the contact form */
               <button width="30%" boarder-radius="25px" class="button" type="submit">Submit</button> 
           </div>
           </form>
-          <?php
-    } 
-else                /* send the submitted data */
-    {
-        $name=$_REQUEST['name'];
-        $email=$_REQUEST['email'];
-        $message=$_REQUEST['message'];
-        if (($name=="")||($email=="")||($message==""))
-        {
-        echo "All fields are required, please fill the form again.";
-        }
-    else{        
-        $from="From:" $name, $email;
-        $subject="About your site";
-        mail("imayadismas@yahoo.com", $subject, $message, $from);
-        echo "Email sent!";
-        }
-    }  
-?>
           <footer>
               
           </footer>
